@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.play.frontend.filters
+package uk.gov.hmrc.play
 
 import play.api.mvc.Results._
 import play.api.mvc._

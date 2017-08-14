@@ -20,6 +20,7 @@ import org.joda.time.{DateTime, DateTimeZone, Duration}
 import play.api.http.HeaderNames.COOKIE
 import play.api.mvc._
 import uk.gov.hmrc.http.SessionKeys._
+import uk.gov.hmrc.play.microservice.filters.MicroserviceFilterSupport
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future

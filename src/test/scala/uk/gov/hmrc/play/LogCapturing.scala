@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.play.frontend.filters
+package uk.gov.hmrc.play
 
 import ch.qos.logback.classic.spi.ILoggingEvent
 import ch.qos.logback.classic.{Level, Logger => LogbackLogger}

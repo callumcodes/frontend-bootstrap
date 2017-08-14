@@ -17,6 +17,7 @@
 package uk.gov.hmrc.play.frontend.filters
 
 import uk.gov.hmrc.crypto.{ApplicationCrypto, Crypted, PlainText}
+import uk.gov.hmrc.play.microservice.filters.MicroserviceFilterSupport
 
 object SessionCookieCryptoFilter extends CookieCryptoFilter with MicroserviceFilterSupport {
 

@@ -29,6 +29,7 @@ import org.scalatest.mock.MockitoSugar
 import play.api.Logger
 import play.api.mvc._
 import play.api.test.FakeRequest
+import uk.gov.hmrc.play.LogCapturing
 
 import scala.concurrent.Future
 
