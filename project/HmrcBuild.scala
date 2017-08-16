@@ -41,6 +41,7 @@ object Dependencies {
     "uk.gov.hmrc" %% "http-verbs" % "7.0.0",
     "uk.gov.hmrc" %% "http-verbs-play-25" % "0.6.0",
     "uk.gov.hmrc" %% "play-graphite" % "3.2.0",
+    "uk.gov.hmrc" %% "auth-client" % "d24a7ccf6175d419590062e17ccd237d833b664f",
     "ch.qos.logback" % "logback-core" % "1.1.7",
     "uk.gov.hmrc" %% "logback-json-logger" % "3.1.0",
     "uk.gov.hmrc" %% "govuk-template" % "5.3.0",
