@@ -19,7 +19,6 @@ package uk.gov.hmrc.play.frontend.filters
 import org.joda.time.{DateTime, DateTimeZone}
 import play.api.http.HttpVerbs.POST
 import play.api.mvc.{Result, _}
-import uk.gov.hmrc.play.microservice.filters.MicroserviceFilterSupport
 
 import scala.concurrent.Future
 
