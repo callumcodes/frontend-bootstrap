@@ -18,8 +18,8 @@ package uk.gov.hmrc.play.frontend.filters
 
 import akka.Done
 import akka.actor.ActorSystem
-import akka.stream.{ActorMaterializer, Materializer}
 import akka.stream.scaladsl.Source
+import akka.stream.{ActorMaterializer, Materializer}
 import akka.util.ByteString
 import controllers.Assets
 import org.mockito.ArgumentCaptor
@@ -36,10 +36,11 @@ import play.api.libs.ws.WS
 import play.api.mvc._
 import play.api.test.Helpers._
 import play.api.test.{FakeApplication, FakeRequest}
+import uk.gov.hmrc.http.{CookieNames, HeaderCarrier, HeaderNames}
+import uk.gov.hmrc.play.audit.EventKeys
 import uk.gov.hmrc.play.audit.http.connector.AuditConnector
 import uk.gov.hmrc.play.audit.model.DataEvent
-import uk.gov.hmrc.play.audit.{EventKeys, EventTypes}
-import uk.gov.hmrc.http.{CookieNames, HeaderCarrier, HeaderNames}
+import uk.gov.hmrc.play.frontend.config.EventTypes
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{ExecutionContext, Future}

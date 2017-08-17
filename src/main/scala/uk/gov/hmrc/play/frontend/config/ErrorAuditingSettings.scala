@@ -18,12 +18,21 @@ package uk.gov.hmrc.play.frontend.config
 
 import play.api.GlobalSettings
 import play.api.mvc.{RequestHeader, Result}
-import uk.gov.hmrc.play.audit.EventTypes._
-import uk.gov.hmrc.play.audit.http.connector.AuditConnector
-import uk.gov.hmrc.http.{HeaderCarrier, JsValidationException, NotFoundException}
+import uk.gov.hmrc.http.{JsValidationException, NotFoundException}
 import uk.gov.hmrc.play.HeaderCarrierConverter
+import uk.gov.hmrc.play.audit.http.connector.AuditConnector
+import uk.gov.hmrc.play.frontend.config.EventTypes._
 
 import scala.concurrent.Future
+
+object EventTypes {
+
+  val RequestReceived: String = "RequestReceived"
+  val TransactionFailureReason: String = "transactionFailureReason"
+  val ServerInternalError: String = "ServerInternalError"
+  val ResourceNotFound: String = "ResourceNotFound"
+  val ServerValidationError: String = "ServerValidationError"
+}
 
 trait ErrorAuditingSettings extends GlobalSettings with HttpAuditEvent {
   import scala.concurrent.ExecutionContext.Implicits.global
